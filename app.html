@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Angular Calendar App</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body ng-app="calendar">
+        <div class="cal" ng-controller="calendarCtrl">
+            <button class="month-change" ng-click="reset()">Reset</button>
+            <div class="header">
+                <button class="month-change" ng-click="monthChange(-1)"><</button>
+                <div class="month">{{dateObj.months[month]}} {{year}}</div>
+                <button class="month-change" ng-click="monthChange(1)">></button>
+            </div>
+
+            <div class="days">
+                <div class="day" ng-repeat="day in monthDays track by $index">
+                    <span class="{{day.type}}">{{day.day}}</span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
