@@ -74,7 +74,7 @@ app.controller('calendarCtrl', function($scope, $http) {
     // Init the current month params
     $scope.setNewMonth();
 
-    $http.get('date.json')
+    $http.get('data.json')
         .success(function(data) {
             $scope.dateObj = data;
         });
