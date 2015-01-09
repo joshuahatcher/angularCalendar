@@ -1,0 +1,53 @@
+@cell-dim: 50px;
+.cal {
+    overflow: hidden;
+    width: 420px;
+    margin: 50px auto;
+    padding: 10px;
+    border: 1px solid;
+    text-align: center;
+    * {
+        box-sizing: border-box;
+    }
+}
+.header > * {
+    display: inline-block;
+}
+.month {
+    width: 120px;
+}
+.month-change {
+    background: none;
+    width: @cell-dim;
+    height: @cell-dim;
+    border: 1px solid;
+    outline: none;
+    cursor: pointer;
+}
+.days {
+    margin: 10px auto;
+    text-align: left;
+}
+.day, .week-day {
+    float: left;
+    width: @cell-dim;
+    margin: 5px;
+    border: 1px solid;
+    text-align: center;
+}
+.day {
+    height: @cell-dim;
+}
+.day-inner {
+    height: 100%;
+    transition: 0.5s all ease-in-out;
+}
+.current:hover {
+    background: #eeeeee;
+}
+.other {
+    color: #cccccc;
+}
+.today {
+    font-weight: bold;
+}
