@@ -10,9 +10,9 @@
                 <button class="month-change" ng-click="changeMonth()">reset</button>
             </div>
             <div class="header">
-                <button class="month-change" ng-click="changeMonth(-1, yr, mo)"><</button>
+                <button class="month-change" ng-click="changeMonth(-1, yr, mo)">&larr;</button>
                 <div class="month">{{mo}}, {{yr}}</div>
-                <button class="month-change" ng-click="changeMonth(1, yr, mo)">></button>
+                <button class="month-change" ng-click="changeMonth(1, yr, mo)">&rarr;</button>
             </div>
             <div class="week">
                 <div class="week-day" ng-repeat="dayOfWeek in daysOfWeek">
