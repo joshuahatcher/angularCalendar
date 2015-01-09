@@ -6,16 +6,22 @@
     </head>
     <body ng-app="calendar">
         <div class="cal" ng-controller="calendarCtrl">
-            <button class="month-change" ng-click="reset()">Reset</button>
             <div class="header">
-                <button class="month-change" ng-click="monthChange(-1)"><</button>
-                <div class="month">{{dateObj.months[month]}} {{year}}</div>
-                <button class="month-change" ng-click="monthChange(1)">></button>
+                <button class="month-change" ng-click="changeMonth()">reset</button>
             </div>
-
+            <div class="header">
+                <button class="month-change" ng-click="changeMonth(-1, yr, mo)"><</button>
+                <div class="month">{{mo}}, {{yr}}</div>
+                <button class="month-change" ng-click="changeMonth(1, yr, mo)">></button>
+            </div>
+            <div class="week">
+                <div class="week-day" ng-repeat="dayOfWeek in daysOfWeek">
+                    {{dayOfWeek}}
+                </div>
+            </div>
             <div class="days">
-                <div class="day" ng-repeat="day in monthDays track by $index">
-                    <span class="{{day.type}}">{{day.day}}</span>
+                <div class="day" ng-repeat="day in days track by $index">
+                    <div class="day-inner {{day.type}}">{{day.num}}</div>
                 </div>
             </div>
         </div>
