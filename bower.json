@@ -1,0 +1,19 @@
+{
+  "name": "angularCalendar",
+  "version": "0.0.1",
+  "homepage": "https://github.com/joshuahatcher/angularCalendar",
+  "authors": [
+    "Joshua Hatcher <joshua.abraham.hatcher@gmail.com>"
+  ],
+  "description": "A lightweight calendar application built with AngularJS",
+  "main": "js/main.js",
+  "keywords": [
+    "angular",
+    "js",
+    "javascript",
+    "joshua",
+    "hatcher",
+    "calendar"
+  ],
+  "license": "MIT"
+}

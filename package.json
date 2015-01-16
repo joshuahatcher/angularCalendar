@@ -1,0 +1,25 @@
+{
+  "name": "angularCalendar",
+  "version": "0.0.1",
+  "description": "A lightweight calendar application built with AngularJS",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshuahatcher/angularCalendar.git"
+  },
+  "keywords": [
+    "angular",
+    "js",
+    "javascript",
+    "joshua",
+    "hatcher",
+    "calendar"
+  ],
+  "author": "Joshua Hatcher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joshuahatcher/angularCalendar/issues"
+  },
+  "homepage": "https://github.com/joshuahatcher/angularCalendar",
+  "dependencies": {},
+  "devDependencies": {}
+}
